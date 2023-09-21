@@ -11,5 +11,140 @@ html {
 }
 
 .App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  background-color: #333;
+}
+
+.container {
+  /* max-width: 400px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.heading {
+  padding: 8px 30px;
   text-align: center;
+  border-bottom: 2px solid #444;
+}
+
+.heading h1 {
+  font-size: 2.4rem;
+}
+
+.midArea {
+  padding: 5px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rangeArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.rangeArea input {
+  width: 80%;
+  outline: none;
+  accent-color: #00a892;
+}
+
+.rangeArea span {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.alertMsg {
+  text-align: center;
+}
+
+.alertMsg p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #9c0000;
+}
+
+.findDateInputArea {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.findDateInputArea button {
+  border: none;
+  background-color: transparent;
+  color: #333;
+  font-size: 1.6rem;
+  border: 2px solid #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 3px;
+  transition: 0.3s ease-out;
+}
+
+.findDateInputArea button:hover {
+  background-color: #00a892;
+  color: #fff;
+  border: 2px solid #00a892;
+}
+
+.findDateInputArea input {
+  outline: none;
+  padding: 2px 5px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  border-radius: 3px;
+  border: 2px solid #444;
+  background-color: transparent;
+}
+
+.findDateInputArea input::-webkit-inner-spin-button,
+.findDateInputArea input::-webkit-outer-spin-button {
+  display: none;
+}
+
+.showDateArea {
+  text-align: center;
+}
+
+.showDateArea p {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.footer {
+  padding: 5px 30px 10px 30px;
+  text-align: center;
+}
+
+.footer button {
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  background-color: #00a892;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 4px 10px;
+  border-radius: 5px;
+  transition: 0.3s ease-out;
+}
+
+.hide {
+  display: none !important;
 }

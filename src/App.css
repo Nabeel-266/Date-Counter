@@ -137,14 +137,123 @@ html {
   font-size: 1.8rem;
   font-weight: bold;
   font-family: "Quicksand", sans-serif;
+  background-color: transparent;
+  color: #00a892;
+  border: 2px solid #00a892;
+  padding: 4px 10px;
+  border-radius: 5px;
+  transition: 0.2s ease-out;
+}
+
+.footer button:active {
   background-color: #00a892;
   color: #fff;
   border: 2px solid #fff;
-  padding: 4px 10px;
-  border-radius: 5px;
-  transition: 0.3s ease-out;
 }
 
 .hide {
   display: none !important;
+}
+
+/* Mobile Small */
+@media (min-width: 320px) and (max-width: 374px) {
+  .container {
+    gap: 6px;
+  }
+
+  .heading {
+    padding: 8px 20px;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .midArea {
+    padding: 5px 20px;
+    gap: 12px;
+  }
+
+  .rangeArea span {
+    font-size: 1.6rem;
+  }
+
+  .alertMsg p {
+    font-size: 1.5rem;
+  }
+
+  .findDateInputArea button {
+    font-size: 1.5rem;
+    padding: 4px 6px;
+  }
+
+  .findDateInputArea input {
+    padding: 2px 5px;
+    font-size: 1.6rem;
+  }
+
+  .showDateArea p {
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    padding: 5px 20px 10px 20px;
+  }
+
+  .footer button {
+    font-size: 1.6rem;
+    padding: 3px 10px;
+  }
+}
+
+/* Mobile Medium */
+@media (min-width: 375px) and (max-width: 450px) {
+  .container {
+    max-width: 320px;
+    gap: 7px;
+  }
+
+  .heading {
+    padding: 8px 20px;
+  }
+
+  .heading h1 {
+    font-size: 2.2rem;
+  }
+
+  .midArea {
+    padding: 7px 20px;
+    gap: 12px;
+  }
+
+  .rangeArea span {
+    font-size: 1.7rem;
+  }
+
+  .alertMsg p {
+    font-size: 1.55rem;
+  }
+
+  .findDateInputArea button {
+    font-size: 1.6rem;
+    padding: 5px 7px;
+  }
+
+  .findDateInputArea input {
+    padding: 3px 5px;
+    font-size: 1.7rem;
+  }
+
+  .showDateArea p {
+    font-size: 1.7rem;
+  }
+
+  .footer {
+    padding: 5px 20px 10px 20px;
+  }
+
+  .footer button {
+    font-size: 1.7rem;
+    padding: 4px 10px;
+  }
 }
